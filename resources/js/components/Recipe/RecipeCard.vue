@@ -19,7 +19,7 @@
           svg-inline
           width="35px"
           height="35px"
-          src="../../../../public/images/heart.svg"
+          src="../../../../public/images/delete.svg"
           alt="heart icon"
         />
       </button>
@@ -29,7 +29,7 @@
           fill="red"
           width="35px"
           height="35px"
-          src="../../../../public/images/heartFill.svg"
+          src="../../../../public/images/deletefill.svg"
           alt="heart icon"
         />
       </button>

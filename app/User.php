@@ -37,12 +37,22 @@ class User extends Authenticatable implements JWTSubject
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
+//Relationship function for recipe
     public function recipes()
     {
         return $this->hasMany(Recipe::class, 'user_id');
     }
 
+//Relationship function for ingridients
+public function ingredients()
+{
+    return $this->hasMany(Ingredient::class, 'user_id');
+}
+//Relationship function for box
+public function box()
+{
+    return $this->hasMany(Box::class, 'user_id');
+}
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *

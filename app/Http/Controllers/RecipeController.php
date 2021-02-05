@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class RecipeController extends Controller
-{
+{ 
     public function index()
     {
-        $recipes = auth()->user()->recipes;
+        $recipes = Recipe::all();
 
         $recipes->map(function ($recipe) {
             return $recipe->ingredients = json_decode($recipe->ingredients);

@@ -8,7 +8,9 @@
         <router-link class="text-black" to="/home">Home</router-link>
       </li>
       <li>
-        <router-link class="text-black" to="/storage">Storage</router-link>
+        <router-link class="text-black" to="/storage"
+          >Recipe Manager</router-link
+        >
       </li>
     </div>
     <li v-if="!currentUser" class="mr-6 flex items-center justify-center">
